@@ -1,4 +1,4 @@
-package com.airhacks;
+package ch.adesso.boundary;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

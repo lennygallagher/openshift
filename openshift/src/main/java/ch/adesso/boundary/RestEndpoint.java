@@ -3,7 +3,7 @@ package ch.adesso.boundary;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("helloWorld")
+@Path("helloworld")
 public class RestEndpoint {
 
     @GET
