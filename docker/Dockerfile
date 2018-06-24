@@ -1,11 +1,11 @@
 FROM jboss/keycloak-adapter-wildfly:3.4.3.Final
 
-MAINTAINER Robert Brem <robert.brem@adesso.ch>
+MAINTAINER Leonhard Gallagher <leonhard.gallagher@adesso.ch>
 
 # copy application source code into container
 COPY . .
 USER root
 RUN yum install maven -y
-RUN mvn clean install
+RUN mvn clean package
 
 RUN cp target/*.war /opt/jboss/wildfly/standalone/deployments/
