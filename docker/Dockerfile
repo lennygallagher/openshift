@@ -4,6 +4,7 @@ MAINTAINER Robert Brem <robert.brem@adesso.ch>
 
 # copy application source code into container
 COPY . .
+USER root
 RUN yum install maven -y
 RUN mvn clean install
 
