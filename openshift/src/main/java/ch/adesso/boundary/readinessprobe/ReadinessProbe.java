@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 
 @Path("readinessprobe")
 public class ReadinessProbe {
-    static final Logger LOGGER= LogManager.getLogger(ReadinessProbe.class);
+    private final Logger LOGGER= LogManager.getLogger(ReadinessProbe.class);
 
     @GET
     public String readinessprobe(){
